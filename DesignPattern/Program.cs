@@ -1,4 +1,5 @@
 ﻿using System;
+using DesignPattern.SingletonPattern;
 
 namespace DesignPattern
 {
