@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using DesignPattern.SimpleFactoryPattern.Pizzas;
-
-namespace DesignPattern.SimpleFactoryPattern
+﻿namespace DesignPattern.SimpleFactoryPattern
 {
     class PizzaStore
     {
@@ -14,16 +9,16 @@ namespace DesignPattern.SimpleFactoryPattern
             this.factory = factory;
         }
 
-        public Pizza orderPizza(string type)
+        public Pizza OrderPizza(string type)
         {
             Pizza pizza;
 
-            pizza = factory.createPizza(type);
+            pizza = factory.CreatePizza(type);
 
-            pizza.prepare();
-            pizza.bake();
-            pizza.cut();
-            pizza.box();
+            pizza.Prepare();
+            pizza.Bake();
+            pizza.Cut();
+            pizza.Box();
 
             return pizza;
         }
