@@ -1,6 +1,6 @@
 ﻿namespace DesignPattern.SimpleFactoryPattern
 {
-    class PizzaStore
+    public class PizzaStore
     {
         SimplePizzaFactory factory;
 
