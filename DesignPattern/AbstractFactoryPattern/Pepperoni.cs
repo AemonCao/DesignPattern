@@ -9,12 +9,12 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public interface IPepperoni
     {
-        public string toString();
+        public string ToString();
     }
 
     public class SlicedPepperoni : IPepperoni
     {
-        public String toString()
+        public override String ToString()
         {
             return "切意大利辣香肠";
         }

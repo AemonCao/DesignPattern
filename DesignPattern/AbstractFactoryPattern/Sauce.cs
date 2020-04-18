@@ -9,7 +9,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public interface ISauce
     {
-        public string toString();
+        public string ToString();
     }
 
     /// <summary>
@@ -17,7 +17,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class MarinaraSauce : ISauce
     {
-        public string toString()
+        public override string ToString()
         {
             return "意大利西红柿酱";
         }
@@ -28,7 +28,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class PlumTomatoSauce : ISauce
     {
-        public string toString()
+        public override string ToString()
         {
             return "梅子西红柿酱";
         }

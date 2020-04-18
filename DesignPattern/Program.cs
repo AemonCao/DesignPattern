@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using DesignPattern.FactoryMethodPattern;
+using DesignPattern.AbstractFactoryPattern;
 
 namespace DesignPattern
 {
@@ -8,10 +8,8 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
-            PizzaStore nyPizzaStore = new NYStylePizzaStore();
-            nyPizzaStore.OrderPizza("cheese");
-            PizzaStore chicagoPizzaStore = new ChicagoStylePizzaStore();
-            chicagoPizzaStore.OrderPizza("viggie");
+            PizzaStore nyStore = new NYPizzaStore();
+            Pizza pizza = nyStore.orderPizza("cheese");
         }
     }
 }

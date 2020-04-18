@@ -9,7 +9,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public interface ICheese
     {
-        public string toString();
+        public string ToString();
     }
 
     /// <summary>
@@ -17,7 +17,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class MozzarellaCheese : ICheese
     {
-        public string toString()
+        public override string ToString()
         {
             return "芝士丝";
         }
@@ -28,7 +28,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class ParmesanCheese : ICheese
     {
-        public string toString()
+        public override string ToString()
         {
             return "帕尔马干酪";
         }
@@ -39,7 +39,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class ReggianoCheese : ICheese
     {
-        public string toString()
+        public override string ToString()
         {
             return "雷吉亚诺奶酪";
         }

@@ -9,7 +9,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public interface IVeggies
     {
-        public string toString();
+        public string ToString();
     }
 
     /// <summary>
@@ -17,7 +17,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class Eggplant : IVeggies
     {
-        public string toString()
+        public override string ToString()
         {
             return "茄子";
         }
@@ -28,7 +28,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class Garlic : IVeggies
     {
-        public string toString()
+        public override string ToString()
         {
             return "大蒜";
         }
@@ -39,7 +39,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class Spinach : IVeggies
     {
-        public string toString()
+        public override string ToString()
         {
             return "菠菜";
         }
@@ -50,7 +50,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class Onion : IVeggies
     {
-        public string toString()
+        public override string ToString()
         {
             return "洋葱";
         }
@@ -61,7 +61,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class Mushroom : IVeggies
     {
-        public string toString()
+        public override string ToString()
         {
             return "蘑菇";
         }
@@ -72,9 +72,20 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class RedPepper : IVeggies
     {
-        public string toString()
+        public override string ToString()
         {
             return "辣椒";
+        }
+    }
+
+    /// <summary>
+    /// 黑橄榄
+    /// </summary>
+    public class BlackOlives : IVeggies
+    {
+        public override string ToString()
+        {
+            return "黑橄榄";
         }
     }
 }

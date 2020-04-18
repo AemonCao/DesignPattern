@@ -9,7 +9,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public interface IClams
     {
-        public string toString();
+        public string ToString();
     }
 
     /// <summary>
@@ -17,7 +17,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class FreshClams : IClams
     {
-        public String toString()
+        public override String ToString()
         {
             return "长岛之声的新鲜蛤";
         }
@@ -28,7 +28,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class FrozenClams : IClams
     {
-        public String toString()
+        public override String ToString()
         {
             return "切萨皮克湾的冷冻蛤";
         }

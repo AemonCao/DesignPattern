@@ -9,7 +9,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public interface IDough
     {
-        public string toString();
+        public string ToString();
     }
 
     /// <summary>
@@ -17,7 +17,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class ThickCrustDough : IDough
     {
-        public string toString()
+        public override string ToString()
         {
             return "厚皮面团";
         }
@@ -28,7 +28,7 @@ namespace DesignPattern.AbstractFactoryPattern
     /// </summary>
     public class ThinCrustDough : IDough
     {
-        public string toString()
+        public override string ToString()
         {
             return "薄皮面团";
         }
